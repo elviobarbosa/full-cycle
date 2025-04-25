@@ -1,5 +1,5 @@
 FROM php:8.2-fpm-alpine
-RUN apk add --no-cache openssl mysql-client nodejs npm
+RUN apk add --no-cache openssl mysql-client nodejs npm bash
 RUN docker-php-ext-install pdo pdo_mysql bcmath
 
 WORKDIR /var/www
